@@ -1,9 +1,11 @@
 services:
   - type: web
-    name: backend-inventario
+    name: sistema-inventario-backend
     env: node
     plan: free
-    buildCommand: cd backend && npm install
+    region: oregon
+    buildCommand: npm install
+    rootDir: backend
     startCommand: node index.js
     envVars:
       - key: DB_HOST
