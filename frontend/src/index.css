@@ -1,0 +1,247 @@
+/* Estilos generales */
+/* Estilos de cada sección de ProductList*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #FFD700; /* dorado */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input, button, select, textarea {
+  background-color: #222;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #FFD700;
+  color: #000;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #FFD700;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #111;
+}
+
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.product-list {
+  background-color: #000; /* Fondo negro */
+  color: #FFD700; /* Letras doradas */
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-list h2 {
+  color: #FFD700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.product-list input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #FFD700;
+  border-radius: 5px;
+  background-color: #111;
+  color: #FFD700;
+}
+
+.product-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  color: #FFD700;
+}
+
+.product-list th,
+.product-list td {
+  padding: 0.7rem;
+  border: 1px solid #FFD700;
+  text-align: center;
+}
+
+.product-list th {
+  background-color: #555;
+  font-weight: bold;
+}
+
+.product-list tr:hover {
+  background-color: #333;
+}
+
+.product-list button {
+  padding: 0.4rem 0.8rem;
+  margin: 0 0.2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  background-color: #FFD700;
+  transition: background-color 0.3s ease;
+}
+
+.product-list button:hover {
+  background-color: #daa520;
+  color: #000;
+}
+
+
+/* Alertas */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin: 15px 0;
+  border-left: 5px solid #28a745;
+  border-radius: 4px;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin: 15px 0;
+  border-left: 5px solid #dc3545;
+  border-radius: 4px;
+}
+
+/* Encabezado de secciones */
+.section-title {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+/* Estilos para el gráfico de estadísticas */
+
+  .statistics {
+  background-color: #000;
+  color: gold;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.statistics canvas {
+  background-color: #111;
+  border-radius: 8px;
+  padding: 10px;
+}       
+
+/* Estilos para el formulario de productos */
+.product-form {
+  background-color: #000;
+  color: gold;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.product-form input,
+.product-form select {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 5px;
+  background-color: #222;
+  color: gold;
+  border: 1px solid gold;
+}
+
+.product-form button {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.product-form button:hover {
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.product-form button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+/* Estilos para la barra de búsqueda */
+.search-bar {
+  margin-bottom: 20px;
+}
+.search-bar input {
+  background-color: #222;
+  color: gold;
+  border: 1px solid gold;
+  padding: 8px;
+}
+.search-bar input::placeholder {
+  color: gold;
+  opacity: 0.7; /* Opacidad del placeholder */
+}
+.search-bar input:focus {
+  outline: none;
+  border-color: #FFD700; /* Cambia el color del borde al hacer foco */
+}
+/* Estilos para el botón de búsqueda */
+.search-bar button {
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background-color: #daa520;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.statistics {
+  text-align: center;
+  margin-top: 40px;
+}
+/* Estilos para el gráfico de estadísticas */
+.statistics canvas {
+  background-color: #111;
+  border-radius: 8px;
+  padding: 10px;
+}
+/* Estilos para el gráfico de estadísticas */
+.statistics h2 {
+  color: #FFD700;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+/* Estilos para el gráfico de estadísticas */
