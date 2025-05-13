@@ -2,8 +2,10 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql2");
 const productoRoutes = require("./src/routes/productoRoutes");
+require("dotenv").config();
+
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors());
@@ -12,12 +14,12 @@ app.use(express.json());
 // Rutas
 app.use("/api", productoRoutes);
 
-// Conexión a MySQL
+// Conexión a MySQL usando variables de entorno
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "", // tu contraseña
-  database: "inventario_ropa", // asegúrate que esta BD exista
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 db.connect((err) => {
