@@ -66,7 +66,7 @@ const ProductForm = ({ onAdd }) => {
           <option value="Accesorios">Accesorios</option>
           <option value="Formal">Formal</option>
           <option value="Casual">Casual</option>
-          <option value="Casual">Deportivo</option>
+          <option value="Deportivo">Deportivo</option>
         </select>
         <input
           type="number"
